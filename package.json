@@ -4,20 +4,45 @@
   "description": "",
   "version": "0.0.1",
   "engines": {
-    "vscode": "^1.98.0"
+    "vscode": "^1.97.0"
   },
   "categories": [
     "Other"
   ],
-  "activationEvents": [],
+  "activationEvents": [
+    "onCommand:extension.openWithCustom"
+  ],
   "main": "./dist/extension.js",
   "contributes": {
     "commands": [
       {
-        "command": "open-file-with-extension.helloWorld",
-        "title": "Hello World"
+        "command": "open-file-with-extension.openWithCustom",
+        "title": "Open With An External App",
+        "category": "Explorer"
+      }
+    ],
+    "configuration": {
+      "type": "object",
+      "title": "Open File With Extension",
+      "properties": {
+        "open-file-with-extension.customApps": {
+          "type": "object",
+          "default": {
+            ".html":"C:\\\\Program Files (x86)\\\\Microsoft\\\\Edge\\\\Application\\\\msedge.exe"
+          },
+          "description": "List of custom apps to open files with. Each entry should be an object with 'name' and 'path' properties."
+        }
+      }
+    },
+  "menus": {
+    "explorer/context": [
+      {
+      "command": "open-file-with-extension.openWithCustom",
+      "when": "resourceLangId != ''",
+      "group": "navigation"
       }
     ]
+  }
   },
   "scripts": {
     "vscode:prepublish": "npm run package",
@@ -31,7 +56,7 @@
     "test": "vscode-test"
   },
   "devDependencies": {
-    "@types/vscode": "^1.98.0",
+    "@types/vscode": "^1.97.0",
     "@types/mocha": "^10.0.10",
     "@types/node": "20.x",
     "@typescript-eslint/eslint-plugin": "^8.28.0",
