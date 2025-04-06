@@ -15,7 +15,6 @@ export function activate(context: vscode.ExtensionContext) {
         }
         const fileExtension = path.extname(uri.fsPath).toLowerCase();
         const appPath = customApps[fileExtension];
-        fs.
         cp.exec(`start "" "${appPath}" "${uri.fsPath}"`);
     });
 	context.subscriptions.push(disposable);
