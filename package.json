@@ -3,6 +3,8 @@
   "displayName": "Open_File_With_Extension",
   "description": "",
   "version": "0.0.1",
+  "icon": "icon.png",
+  "publisher": "Solorzano-JuanJose",
   "engines": {
     "vscode": "^1.97.0"
   },
