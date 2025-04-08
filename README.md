@@ -1,4 +1,4 @@
-# 📂 Open File With Extension
+# 📂 Open With System Editor
 
 A Visual Studio Code extension that allows you to open files with specific applications based on their file extensions. Configure your preferred applications for different file types and open files directly from VS Code.
 
@@ -36,6 +36,7 @@ A Visual Studio Code extension that allows you to open files with specific appli
 This extension contributes the following settings:
 - `open-file-with-extension.customApps`: A mapping of file extensions to application paths.
 
+![Alt text](./setting_example.png)
 ## 🤝 Contributing
 Feel free to submit issues or pull requests to improve this extension.
 
