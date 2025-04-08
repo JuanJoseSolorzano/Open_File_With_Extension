@@ -1,6 +1,6 @@
 {
   "name": "open-file-with-extension",
-  "displayName": "Open With System Editor",
+  "displayName": "Open With Custom Editor",
   "description": "",
   "version": "1.2.4",
   "icon": "icon.png",
