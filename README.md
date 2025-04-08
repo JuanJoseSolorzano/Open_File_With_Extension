@@ -14,6 +14,7 @@ A Visual Studio Code extension that allows you to open files with specific appli
 2. Search for `open-file-with-extension`.
 3. Add your custom applications in the following format:
    ```json
+   "open-file-with-extension.customApps":
    {
        ".txt": "C:\\Program Files\\Notepad++\\notepad++.exe",
        ".jpg": "C:\\Program Files\\IrfanView\\i_view64.exe"
