@@ -33,11 +33,13 @@ A Visual Studio Code extension that allows you to open files with specific appli
 - `.txt` files open in **Notepad++**.
 - `.jpg` files open in **IrfanView**.
 
+![Alt text](./images/usage_example.png)
+
 ## 🧩 Extension Settings
 This extension contributes the following settings:
 - `open-file-with-extension.customApps`: A mapping of file extensions to application paths.
 
-![Alt text](./setting_example.png)
+![Alt text](./images/setting_example.png)
 ## 🤝 Contributing
 Feel free to submit issues or pull requests to improve this extension.
 

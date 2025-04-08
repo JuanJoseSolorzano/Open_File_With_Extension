@@ -3,7 +3,7 @@
   "displayName": "Open With Custom Editor",
   "description": "",
   "version": "1.2.5",
-  "icon": "icon.png",
+  "icon": "./images/icon.png",
   "publisher": "Solorzano-JuanJose",
   "engines": {
     "vscode": "^1.97.0"
@@ -23,13 +23,13 @@
     "commands": [
       {
         "command": "open-file-with-extension.openWithCustom",
-        "title": "Open With An External App",
+        "title": "Open With Custom Editor",
         "category": "Explorer"
       }
     ],
     "configuration": {
       "type": "object",
-      "title": "Open File With Extension",
+      "title": "Open With Custom Editor",
       "properties": {
         "open-file-with-extension.customApps": {
           "type": "object",
