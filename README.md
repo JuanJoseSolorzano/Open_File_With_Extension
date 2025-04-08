@@ -1,4 +1,4 @@
-# 📂 Open With System Editor
+# 📂 Open With Custom Editor
 
 A Visual Studio Code extension that allows you to open files with specific applications based on their file extensions. Configure your preferred applications for different file types and open files directly from VS Code.
 
